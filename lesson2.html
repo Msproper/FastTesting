@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Занятие 2 — Условия и циклы | C# Academy</title>
+    <meta name="description" content="Тестирование по теме: Условные конструкции, циклы и логические операторы в C#.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo"><span class="logo-icon">⟨/⟩</span><span class="logo-text">C# Academy</span></a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="#quiz" class="nav-link">Тест</a>
+                <a href="#practice" class="nav-link">Практика</a>
+            </nav>
+        </div>
+    </header>
+    <section class="lesson-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Главная</a><span class="breadcrumb-sep">→</span><span>Занятие 2</span>
+            </div>
+            <h1 class="lesson-hero-title"><span class="gradient-text">Занятие 2.</span> Условия и циклы</h1>
+            <p class="lesson-hero-desc">Условные конструкции, циклы и логические операторы. Научись управлять потоком выполнения программы.</p>
+        </div>
+    </section>
+    <div class="container">
+        <div class="section-nav" id="sectionNav">
+            <button class="section-nav-btn active" data-target="quiz" id="btnQuiz">📝 Тестирование</button>
+            <button class="section-nav-btn" data-target="practice" id="btnPractice">💻 Практика</button>
+            <button class="section-nav-btn" data-target="results" id="btnResults">🏆 Итоги</button>
+        </div>
+    </div>
+    <section class="quiz-section" id="quiz">
+        <div class="container">
+            <div class="progress-bar-wrapper">
+                <div class="progress-info">
+                    <span class="progress-label">Прогресс тестирования</span>
+                    <span class="progress-count" id="progressCount">0 / 30</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+            </div>
+            <div class="score-card" id="scoreCard">
+                <div class="score-emoji" id="scoreEmoji">🎉</div>
+                <div class="score-text" id="scoreText">Отличный результат!</div>
+                <div class="score-detail">Правильных ответов: <span class="score-number" id="scoreNumber">0/30</span></div>
+            </div>
+            <div id="quizContainer"></div>
+        </div>
+    </section>
+    <section class="practice-section" id="practice" style="display:none;">
+        <div class="container">
+            <h2 class="practice-title">💻 Практические задания</h2>
+            <p class="practice-subtitle">Напиши программу на C# для каждого задания. Проверь себя — результат должен совпадать с ожидаемым выводом.</p>
+            <div id="practiceContainer"></div>
+        </div>
+    </section>
+    <section class="result-section" id="finalResult" style="display:none;">
+        <div class="container"><div id="finalResultContent"></div></div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo"><span class="logo-icon">⟨/⟩</span><span class="logo-text">C# Academy</span></div>
+                <p class="footer-text">Платформа для изучения C# с интерактивными тестами и заданиями</p>
+            </div>
+        </div>
+    </footer>
+    <script src="lesson2-data.js"></script>
+    <script src="quiz-engine.js"></script>
+</body>
+</html>

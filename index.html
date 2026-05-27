@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C# Academy — Тестирование и практика</title>
+    <meta name="description" content="Интерактивная платформа для изучения C#. Тесты, задания и практика по программированию.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⟨/⟩</span>
+                <span class="logo-text">C# Academy</span>
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link active">Главная</a>
+                <a href="#lessons" class="nav-link">Занятия</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">🚀 Интерактивное обучение</div>
+            <h1 class="hero-title">
+                Изучай <span class="gradient-text">C#</span> на практике
+            </h1>
+            <p class="hero-subtitle">
+                Проходи тесты, решай задачи и прокачивай навыки программирования. 
+                Каждое занятие — шаг к уверенному владению языком.
+            </p>
+            <a href="#lessons" class="hero-btn">
+                <span>Начать обучение</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Занятия</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">90</div>
+                    <div class="stat-label">Вопросов</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Практических задач</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lessons -->
+    <section class="lessons" id="lessons">
+        <div class="container">
+            <h2 class="section-title">Выбери занятие</h2>
+            <p class="section-subtitle">Каждое занятие содержит тесты с объяснениями и практические задания</p>
+            
+            <div class="lessons-grid">
+                <!-- Lesson 1 -->
+                <a href="lesson1.html" class="lesson-card" style="--delay: 0.1s">
+                    <div class="lesson-card-header">
+                        <span class="lesson-number">01</span>
+                        <span class="lesson-status available">Доступно</span>
+                    </div>
+                    <div class="lesson-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="lesson-card-title">Введение в C#</h3>
+                    <p class="lesson-card-desc">Переменные, типы данных и вывод в консоль. Основы синтаксиса языка C#.</p>
+                    <div class="lesson-card-meta">
+                        <span>📝 30 вопросов</span>
+                        <span>💻 5 задач</span>
+                    </div>
+                    <div class="lesson-card-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Lesson 2 -->
+                <a href="lesson2.html" class="lesson-card" style="--delay: 0.2s">
+                    <div class="lesson-card-header">
+                        <span class="lesson-number">02</span>
+                        <span class="lesson-status available">Доступно</span>
+                    </div>
+                    <div class="lesson-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="lesson-card-title">Условия и циклы</h3>
+                    <p class="lesson-card-desc">if/else, switch, for, while, логические операторы — управление потоком программы.</p>
+                    <div class="lesson-card-meta">
+                        <span>📝 30 вопросов</span>
+                        <span>💻 5 задач</span>
+                    </div>
+                    <div class="lesson-card-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Lesson 3 -->
+                <a href="lesson3.html" class="lesson-card" style="--delay: 0.3s">
+                    <div class="lesson-card-header">
+                        <span class="lesson-number">03</span>
+                        <span class="lesson-status available">Доступно</span>
+                    </div>
+                    <div class="lesson-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h3 class="lesson-card-title">Функции</h3>
+                    <p class="lesson-card-desc">Методы, параметры, возвращаемые значения, перегрузка и рекурсия.</p>
+                    <div class="lesson-card-meta">
+                        <span>📝 30 вопросов</span>
+                        <span>💻 5 задач</span>
+                    </div>
+                    <div class="lesson-card-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">⟨/⟩</span>
+                    <span class="logo-text">C# Academy</span>
+                </div>
+                <p class="footer-text">Платформа для изучения C# с интерактивными тестами и заданиями</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
